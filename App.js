@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView, StatusBar, useColorScheme } from 'react-native'
 
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 
-import ToDoList from './ToDoList'
 import ToDoForm from './ToDoForm'
+import ToDoList from './ToDoList'
 
 export default function App() {
+    const [tasks, setTasks] = useState([
+        'Do laundry',
+        'Go to gym',
+        'Walk dog'
+    ])
+
     const isDarkMode = useColorScheme() === 'dark'
 
     const backgroundStyle = {
@@ -19,7 +25,7 @@ export default function App() {
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
                 backgroundColor={backgroundStyle.backgroundColor}
             />
-            <ToDoList />
+            <ToDoList tasks={tasks} />
             <ToDoForm />
         </SafeAreaView>
     )
