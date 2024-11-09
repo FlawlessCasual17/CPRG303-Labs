@@ -9,6 +9,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@stylistic/eslint-plugin-js": "^2.10.1",
     "expo": "~51.0.28",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
