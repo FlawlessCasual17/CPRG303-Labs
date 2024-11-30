@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { Button, StyleSheet, TextInput, View } from 'react-native'
 
 const styles = StyleSheet.create({
