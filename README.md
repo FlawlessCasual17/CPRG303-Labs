@@ -1,3 +1,3 @@
-# CPRG303 Lab 3
+# CPRG303 Labs
 
-Lab 3 assignment for CPRG303.
+Lab Assignments for CPRG303.
